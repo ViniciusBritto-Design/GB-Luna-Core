@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luna Core Dashboard</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main class="dashboard">
+    <header class="topbar">
+      <div class="header-block header-brand">
+        <div class="brand">
+          <div class="moon" aria-hidden="true"></div>
+
+          <div>
+            <h1>LUNA CORE</h1>
+            <p>Lunar Resource Management System</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="header-block header-center">
+        <div class="top-pill utc-pill">
+          <span>UTC</span>
+          <strong>2030-05-24&nbsp;&nbsp;14:32:18</strong>
+        </div>
+
+        <div class="top-pill status-pill">
+          <span>System Status</span>
+          <strong class="status-text status-nominal">Nominal</strong>
+        </div>
+      </div>
+
+      <div class="header-block header-right">
+        <button class="alert-button" type="button">△ 3 Alerts</button>
+
+        <div class="base-info">
+          <strong>Base Luna-7</strong>
+          <span>Sector 12-A</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="main-grid" aria-label="Resource dashboard">
+      <div class="resource-column">
+        <article class="resource-card resource-energy" role="link" tabindex="0" onclick="window.location.href='energy.html'" onkeydown="if(event.key==='Enter') window.location.href='energy.html'">
+          <header class="card-header">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M13.4 2.5 5.8 13.2h5.3l-1.2 8.3 8.3-12h-5.4l.6-7Z" />
+            </svg></span>
+            <h2>Energy</h2>
+          </header>
+
+          <div class="resource-content">
+            <div class="donut" style="--value:82; --ring-color:var(--energy);">
+              <span>82<small>%</small></span>
+            </div>
+
+            <div class="resource-metrics">
+              <div class="metric-group">
+                <p>Power Output</p>
+                <strong>4.2 <small>MW</small></strong>
+              </div>
+
+<svg class="sparkline" viewBox="0 0 120 34" aria-hidden="true">
+  <polygon
+    class="spark-area"
+    points="0,24 10,19 20,22 31,15 42,18 53,13 64,24 75,9 86,22 97,10 108,17 120,11 120,34 0,34"
+  />
+
+  <polyline
+    points="0,24 10,19 20,22 31,15 42,18 53,13 64,24 75,9 86,22 97,10 108,17 120,11"
+  />
+</svg>
+
+              <div class="metric-group">
+                <p>Consumption</p>
+                <strong>3.4 <small>MW</small></strong>
+              </div>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <span>Resource Status</span>
+            <b class="status-badge status-nominal">Nominal</b>
+          </footer>
+        </article>
+
+        <article class="resource-card resource-oxygen" role="link" tabindex="0" onclick="window.location.href='oxygen.html'" onkeydown="if(event.key==='Enter') window.location.href='oxygen.html'">
+          <header class="card-header">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M11.2 12.1c-1.6-3.6-3.6-6-5.4-6-1.7 0-2.6 2.2-2.6 5.6v4.1c0 1.7 1.1 2.9 2.5 2.9 2.2 0 4.2-2.7 5.5-6.6Z" />
+              <path d="M12.8 12.1c1.6-3.6 3.6-6 5.4-6 1.7 0 2.6 2.2 2.6 5.6v4.1c0 1.7-1.1 2.9-2.5 2.9-2.2 0-4.2-2.7-5.5-6.6Z" />
+              <path d="M12 3.8v8.7" />
+              <path d="M9.8 13.6c1.4.8 3 .8 4.4 0" />
+            </svg></span>
+            <h2>Oxygen</h2>
+          </header>
+
+          <div class="resource-content">
+            <div class="donut" style="--value:91; --ring-color:var(--oxygen);">
+              <span>91<small>%</small></span>
+            </div>
+
+            <div class="resource-metrics">
+              <div class="metric-group">
+                <p>O2 Level</p>
+                <strong>21.3<small>%</small></strong>
+              </div>
+
+<svg class="sparkline" viewBox="0 0 120 34" aria-hidden="true">
+  <polygon
+    class="spark-area"
+    points="0,21 10,18 20,20 30,16 40,18 50,15 60,17 70,14 80,18 90,15 100,17 110,13 120,15 120,34 0,34"
+  />
+
+  <polyline
+    points="0,21 10,18 20,20 30,16 40,18 50,15 60,17 70,14 80,18 90,15 100,17 110,13 120,15"
+  />
+</svg>
+
+              <div class="metric-group">
+                <p>Pressure</p>
+                <strong>101.2 <small>kPa</small></strong>
+              </div>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <span>Resource Status</span>
+            <b class="status-badge status-nominal">Nominal</b>
+          </footer>
+        </article>
+      </div>
+
+      <article class="center-card" role="link" tabindex="0" onclick="window.location.href='colony-health.html'" onkeydown="if(event.key==='Enter') window.location.href='colony-health.html'">
+        <header class="card-header center-header">
+          <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M2.5 12h4.1l1.5-5.2 3.2 10.7 2.2-8.1 1.8 2.6h6.2" />
+            </svg></span>
+          <h2>Colony Health</h2>
+        </header>
+
+        <div class="center-content">
+
+          <div class="donut donut-large" style="--value:79; --ring-color:var(--center-color);">
+            <span>79<small>%</small></span>
+          </div>
+
+          <p>
+            <span>Combined status of</span>
+            <span>all critical resources</span>
+          </p>
+        </div>
+
+        <div class="mini-stats">
+          <div class="stat-box">
+            <span>Temperature</span>
+            <strong><svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M10 13.5V5.5a2 2 0 0 1 4 0v8a4.5 4.5 0 1 1-4 0Z" />
+                <path d="M12 6v9.5" />
+              </svg>-17.3°C</strong>
+            <em>Exterior</em>
+          </div>
+
+          <div class="stat-box">
+            <span>Radiation</span>
+            <strong><svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.2 19 6v5.3c0 4.3-2.8 7.8-7 9.5-4.2-1.7-7-5.2-7-9.5V6l7-2.8Z" />
+                <path d="M12 8v7" />
+                <path d="M8.8 11.5h6.4" />
+              </svg>1.2 <small>mSv/h</small></strong>
+            <em>Normal</em>
+          </div>
+
+          <div class="stat-box">
+            <span>Habitat Integrity</span>
+            <strong><svg class="stat-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3.2 19 6v5.3c0 4.3-2.8 7.8-7 9.5-4.2-1.7-7-5.2-7-9.5V6l7-2.8Z" />
+                <path d="M12 8v7" />
+                <path d="M8.8 11.5h6.4" />
+              </svg>98%</strong>
+            <em>Nominal</em>
+          </div>
+        </div>
+      </article>
+
+      <div class="resource-column">
+        <article class="resource-card resource-water" role="link" tabindex="0" onclick="window.location.href='water.html'" onkeydown="if(event.key==='Enter') window.location.href='water.html'">
+          <header class="card-header">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 2.8S5.5 10.1 5.5 15a6.5 6.5 0 0 0 13 0C18.5 10.1 12 2.8 12 2.8Z" />
+              <path d="M8.8 15.7c.4 1.7 1.7 2.9 3.2 2.9" />
+            </svg></span>
+            <h2>Water</h2>
+          </header>
+
+          <div class="resource-content">
+            <div class="donut" style="--value:67; --ring-color:var(--water);">
+              <span>67<small>%</small></span>
+            </div>
+
+            <div class="resource-metrics">
+              <div class="metric-group">
+                <p>Water Level</p>
+                <strong>67<small>%</small></strong>
+              </div>
+
+<svg class="sparkline" viewBox="0 0 120 34" aria-hidden="true">
+  <polygon
+    class="spark-area"
+    points="0,22 10,17 20,20 30,15 40,18 50,12 60,8 70,14 80,24 90,10 100,19 110,12 120,11 120,34 0,34"
+  />
+
+  <polyline
+    points="0,22 10,17 20,20 30,15 40,18 50,12 60,8 70,14 80,24 90,10 100,19 110,12 120,11"
+  />
+</svg>
+
+              <div class="metric-group">
+                <p>Reservoir</p>
+                <strong>2,350 <small>L</small></strong>
+              </div>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <span>Resource Status</span>
+            <b class="status-badge status-warning">Warning</b>
+          </footer>
+        </article>
+
+        <article class="resource-card resource-agriculture" role="link" tabindex="0" onclick="window.location.href='agriculture.html'" onkeydown="if(event.key==='Enter') window.location.href='agriculture.html'">
+          <header class="card-header">
+            <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 20V8" />
+              <path d="M12 8c-2.8-.2-5-1.6-6.4-4.2 3.4-.2 5.6 1 6.4 4.2Z" />
+              <path d="M12 8c2.8-.2 5-1.6 6.4-4.2-3.4-.2-5.6 1-6.4 4.2Z" />
+              <path d="M7 20h10" />
+            </svg></span>
+            <h2>Agriculture</h2>
+          </header>
+
+          <div class="resource-content">
+            <div class="donut" style="--value:42; --ring-color:var(--agriculture);">
+              <span>42<small>%</small></span>
+            </div>
+
+            <div class="resource-metrics">
+              <div class="metric-group">
+                <p>Crop Health</p>
+                <strong>42<small>%</small></strong>
+              </div>
+
+<svg class="sparkline" viewBox="0 0 120 34" aria-hidden="true">
+  <polygon
+    class="spark-area"
+    points="0,25 10,18 20,23 30,14 40,19 50,16 60,7 70,25 80,9 90,22 100,12 110,18 120,13 120,34 0,34"
+  />
+
+  <polyline
+    points="0,25 10,18 20,23 30,14 40,19 50,16 60,7 70,25 80,9 90,22 100,12 110,18 120,13"
+  />
+</svg>
+
+              <div class="metric-group">
+                <p>Production</p>
+                <strong>120 <small>kg</small></strong>
+              </div>
+            </div>
+          </div>
+
+          <footer class="card-footer">
+            <span>Resource Status</span>
+            <b class="status-badge status-critical">Critical</b>
+          </footer>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

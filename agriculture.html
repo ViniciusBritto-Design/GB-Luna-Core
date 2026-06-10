@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agriculture Management | Luna Core</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="dashboard detail-dashboard" style="--detail-color: var(--agriculture); --ring-color: var(--agriculture);">
+    <header class="detail-topbar">
+      <a class="back-link" href="index.html">← Back to Dashboard</a>
+      <div class="detail-status">
+        <span>System Status</span>
+        <b class="status-badge status-critical">Critical</b>
+      </div>
+    </header>
+
+    <section class="detail-layout">
+      <article class="detail-hero">
+        <header class="detail-title">
+          <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V8" /><path d="M12 8c-2.8-.2-5-1.6-6.4-4.2 3.4-.2 5.6 1 6.4 4.2Z" /><path d="M12 8c2.8-.2 5-1.6 6.4-4.2-3.4-.2-5.6 1-6.4 4.2Z" /><path d="M7 20h10" /></svg></span>
+          <div>
+            <h1>Agriculture Management</h1>
+            <p>Food production and crop monitoring</p>
+          </div>
+        </header>
+
+        <div class="detail-main-metric">
+          <div class="donut" style="--value:42; --ring-color:var(--agriculture);">
+            <span>42<small>%</small></span>
+          </div>
+        </div>
+
+        <p class="detail-summary">Live operational reading based on simulated lunar resource telemetry.</p>
+      </article>
+
+      <aside class="detail-panel">
+        <h2>Resource Metrics</h2>
+        <div class="detail-grid"><div class="detail-metric"><span>Crop Health</span><strong>42%</strong></div>
+<div class="detail-metric"><span>Production</span><strong>120 kg</strong></div>
+<div class="detail-metric"><span>Nutrient Efficiency</span><strong>58%</strong></div>
+<div class="detail-metric"><span>Growth Forecast</span><strong>Low</strong></div></div>
+
+        <h2 style="margin-top:28px;">24h Trend</h2>
+        <svg class="detail-chart" viewBox="0 0 600 180" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="0" y1="45" x2="600" y2="45" />
+          <line x1="0" y1="90" x2="600" y2="90" />
+          <line x1="0" y1="135" x2="600" y2="135" />
+          <polyline points="0,82 70,74 135,88 205,62 280,70 360,54 430,76 510,58 600,64" />
+        </svg>
+
+        <h2>Recommended Actions</h2>
+        <ul class="action-list"><li>Inspect nutrient delivery immediately.</li>
+<li>Reduce thermal variation in growth modules.</li>
+<li>Prioritize recovery protocol for affected crops.</li></ul>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oxygen Management | Luna Core</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="dashboard detail-dashboard" style="--detail-color: var(--oxygen); --ring-color: var(--oxygen);">
+    <header class="detail-topbar">
+      <a class="back-link" href="index.html">← Back to Dashboard</a>
+      <div class="detail-status">
+        <span>System Status</span>
+        <b class="status-badge status-nominal">Nominal</b>
+      </div>
+    </header>
+
+    <section class="detail-layout">
+      <article class="detail-hero">
+        <header class="detail-title">
+          <span class="card-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11.2 12.1c-1.6-3.6-3.6-6-5.4-6-1.7 0-2.6 2.2-2.6 5.6v4.1c0 1.7 1.1 2.9 2.5 2.9 2.2 0 4.2-2.7 5.5-6.6Z" /><path d="M12.8 12.1c1.6-3.6 3.6-6 5.4-6 1.7 0 2.6 2.2 2.6 5.6v4.1c0 1.7-1.1 2.9-2.5 2.9-2.2 0-4.2-2.7-5.5-6.6Z" /><path d="M12 3.8v8.7" /><path d="M9.8 13.6c1.4.8 3 .8 4.4 0" /></svg></span>
+          <div>
+            <h1>Oxygen Management</h1>
+            <p>Life support and atmospheric control</p>
+          </div>
+        </header>
+
+        <div class="detail-main-metric">
+          <div class="donut" style="--value:91; --ring-color:var(--oxygen);">
+            <span>91<small>%</small></span>
+          </div>
+        </div>
+
+        <p class="detail-summary">Live operational reading based on simulated lunar resource telemetry.</p>
+      </article>
+
+      <aside class="detail-panel">
+        <h2>Resource Metrics</h2>
+        <div class="detail-grid"><div class="detail-metric"><span>O₂ Level</span><strong>21.3%</strong></div>
+<div class="detail-metric"><span>Pressure</span><strong>101.2 kPa</strong></div>
+<div class="detail-metric"><span>Air Recycling</span><strong>94%</strong></div>
+<div class="detail-metric"><span>CO₂ Capture</span><strong>89%</strong></div></div>
+
+        <h2 style="margin-top:28px;">24h Trend</h2>
+        <svg class="detail-chart" viewBox="0 0 600 180" preserveAspectRatio="none" aria-hidden="true">
+          <line x1="0" y1="45" x2="600" y2="45" />
+          <line x1="0" y1="90" x2="600" y2="90" />
+          <line x1="0" y1="135" x2="600" y2="135" />
+          <polyline points="0,82 70,74 135,88 205,62 280,70 360,54 430,76 510,58 600,64" />
+        </svg>
+
+        <h2>Recommended Actions</h2>
+        <ul class="action-list"><li>Keep current airflow distribution.</li>
+<li>Run standard filter inspection.</li>
+<li>Maintain atmospheric pressure within nominal range.</li></ul>
+      </aside>
+    </section>
+  </main>
+</body>
+</html>
